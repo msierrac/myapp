@@ -1,0 +1,48 @@
+extends layout
+
+block content
+    .row
+        #sidecol.column
+
+        #infocol.column
+            #infoBlock
+                .heading
+                    h2.text-center #{data.gameName}
+
+                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB40lEQVRIie2VPUscURSGnzMbrBKmkMTC5D+ksAhiZJsUsbdIkyKsgZA17q4GP5DEJqAEncXERleXLAQEi6QJpBQhUQQrzT9Ipa5gUshqdk6KVdkZvTOru9OIb3fnfe95zuEO98K1rrrEZGimpx00idIJ3Aa2gWUssjKZ2/Bk08/aECuFEq/KrqDuR8kurNYE1u7uGPdsB6XX0JMLjOPkRgFI9bxDdMgwhIJO8/tPvywtlauNG2eiwVAACxghk7iFioAmA7IC0kerrUDaZ1S1l0k8QPlp6L4+qXZIdv7HydLymX2RQAEseeFZel15GAkUOP5JTWDuRAaGliDw3wjBntp+8K8IwVtmsMjXyLCCp7YXXCp9AkoRYA85Kn82gmWmUAQtNByrkpcP+R0juNLb0TBQbCB2j5iM+j+eAVem5nXDsEJaJmd3Q8EA4uTyiCzUT9U5mcqde3Tngit7biaBtTqoq9jlVyYz8F7Wwec2h+4ycP+C0E3QuDjze6aAeWJAJmb3UauLi10sm7g8CoJCjS+RvnzaTFPTd6AtJLoO+jgMCiETn3Y3UygSK8WBLwGpb/w7CJ30NF1L6EQKQibxFuWNb+809t20jI25tda61KOvqcQThPfHJQbEmVu8TJ1rXW39B0FVjflf+OAJAAAAAElFTkSuQmCC", style='width:25px;length:26px;padding-top:1px;')
+                    p(id='unoLikesTotal')
+
+                    button.mt-auto.btn.btn-block.btn-outline-primary(type='button', id='unoLikes', onClick='addLike(this.id)', size='width:50px;') Like
+
+                p
+                    img(src='/images/card/uno.jpg')
+
+                p(style='whitespace:pre;')
+                    img(src="https://img.icons8.com/wired/64/000000/restaurant-table.png", style='width:25px;length:25px;')
+                    |  Players: #{data.players}
+                p
+                    img(src="https://img.icons8.com/wired/64/000000/brainstorm-skill.png", style='width:25px;length:25px;')
+                    |  Skills: #{data.skills}
+                p
+                    img(src="https://img.icons8.com/wired/64/000000/family.png", style='width:25px;length:25px;')
+                    |  Age: #{data.age}
+                p
+                    img(src="https://img.icons8.com/wired/64/000000/cards.png", style='width:25px;length:25px;')
+                    |  Cards: #{data.cards}
+                p
+                    img(src="https://img.icons8.com/wired/64/000000/dice.png", style='width:25px;length:25px;')
+                    |  Random Chance: #{data.randomChance}
+
+        #textcol.column
+            h3 About
+            p #{data.about}
+
+            h3 Official Rules
+            p #{data.rules.play}
+
+            h3 Penalties
+            p #{data.rules.penalties}
+
+        #sidecol2.column
+
+        script(src='javascript/client.js')

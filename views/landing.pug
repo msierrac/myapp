@@ -1,0 +1,45 @@
+extends layout
+
+block content
+
+      #cardcol.column
+        h2(style='padding-top:10px; padding-bottom:10px;patting-top:40px;text-align: left;') Card Games
+        .card-deck
+          .card
+            .card-header
+              h2.card-title.text-center #{data[1][0].gameName}
+            img.card-img-top(src='/images/card/uno2.png')
+            .card-footer
+              .row(style='background-color: #ede8e0; width: 100%;')
+                .column(style='background-color: #ede8e0;padding-left: 10%;padding-top:4px;width:70%;')
+                  .line
+                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB40lEQVRIie2VPUscURSGnzMbrBKmkMTC5D+ksAhiZJsUsbdIkyKsgZA17q4GP5DEJqAEncXERleXLAQEi6QJpBQhUQQrzT9Ipa5gUshqdk6KVdkZvTOru9OIb3fnfe95zuEO98K1rrrEZGimpx00idIJ3Aa2gWUssjKZ2/Bk08/aECuFEq/KrqDuR8kurNYE1u7uGPdsB6XX0JMLjOPkRgFI9bxDdMgwhIJO8/tPvywtlauNG2eiwVAACxghk7iFioAmA7IC0kerrUDaZ1S1l0k8QPlp6L4+qXZIdv7HydLymX2RQAEseeFZel15GAkUOP5JTWDuRAaGliDw3wjBntp+8K8IwVtmsMjXyLCCp7YXXCp9AkoRYA85Kn82gmWmUAQtNByrkpcP+R0juNLb0TBQbCB2j5iM+j+eAVem5nXDsEJaJmd3Q8EA4uTyiCzUT9U5mcqde3Tngit7biaBtTqoq9jlVyYz8F7Wwec2h+4ycP+C0E3QuDjze6aAeWJAJmb3UauLi10sm7g8CoJCjS+RvnzaTFPTd6AtJLoO+jgMCiETn3Y3UygSK8WBLwGpb/w7CJ30NF1L6EQKQibxFuWNb+809t20jI25tda61KOvqcQThPfHJQbEmVu8TJ1rXW39B0FVjflf+OAJAAAAAElFTkSuQmCC", style='width:25px;length:26px;padding-top:5px;')
+                    p(id='unoLikesTotal')
+                button.mt-auto.btn.btn-lg.btn-block.btn-outline-primary(type='button', id='unoLikes', onClick='addLike(this.id)') Like
+
+
+          .card
+            .card-header
+              h2.card-title.text-center #{data[1][1].gameName}
+            img.card-img-top(src='/images/card/mdeal.png')
+            .card-footer
+              .row(style='background-color: #ede8e0; width: 100%;')
+                .column(style='background-color: #ede8e0;padding-left: 10%;padding-top:4px;width: 70%;')
+                  .line
+                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB40lEQVRIie2VPUscURSGnzMbrBKmkMTC5D+ksAhiZJsUsbdIkyKsgZA17q4GP5DEJqAEncXERleXLAQEi6QJpBQhUQQrzT9Ipa5gUshqdk6KVdkZvTOru9OIb3fnfe95zuEO98K1rrrEZGimpx00idIJ3Aa2gWUssjKZ2/Bk08/aECuFEq/KrqDuR8kurNYE1u7uGPdsB6XX0JMLjOPkRgFI9bxDdMgwhIJO8/tPvywtlauNG2eiwVAACxghk7iFioAmA7IC0kerrUDaZ1S1l0k8QPlp6L4+qXZIdv7HydLymX2RQAEseeFZel15GAkUOP5JTWDuRAaGliDw3wjBntp+8K8IwVtmsMjXyLCCp7YXXCp9AkoRYA85Kn82gmWmUAQtNByrkpcP+R0juNLb0TBQbCB2j5iM+j+eAVem5nXDsEJaJmd3Q8EA4uTyiCzUT9U5mcqde3Tngit7biaBtTqoq9jlVyYz8F7Wwec2h+4ycP+C0E3QuDjze6aAeWJAJmb3UauLi10sm7g8CoJCjS+RvnzaTFPTd6AtJLoO+jgMCiETn3Y3UygSK8WBLwGpb/w7CJ30NF1L6EQKQibxFuWNb+809t20jI25tda61KOvqcQThPfHJQbEmVu8TJ1rXW39B0FVjflf+OAJAAAAAElFTkSuQmCC", style='width:25px;length:26px;padding-top:5px;')
+                    p(id='mdealLikesTotal')
+                button.mt-auto.btn.btn-lg.btn-block.btn-outline-primary(type='button', id='mdealLikes', onClick='addLike(this.id)') Like
+
+          .card
+            .card-header
+              h2.card-title.text-center #{data[1][2].gameName}
+            img.card-img-top(src='/images/card/gofish.png')
+            .card-footer
+              .row(style='background-color: #ede8e0; width: 100%;')
+
+                .column(style='background-color: #ede8e0;padding-left: 10%;padding-top:4px;width: 70%;')
+                  .line
+                    img(src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAB40lEQVRIie2VPUscURSGnzMbrBKmkMTC5D+ksAhiZJsUsbdIkyKsgZA17q4GP5DEJqAEncXERleXLAQEi6QJpBQhUQQrzT9Ipa5gUshqdk6KVdkZvTOru9OIb3fnfe95zuEO98K1rrrEZGimpx00idIJ3Aa2gWUssjKZ2/Bk08/aECuFEq/KrqDuR8kurNYE1u7uGPdsB6XX0JMLjOPkRgFI9bxDdMgwhIJO8/tPvywtlauNG2eiwVAACxghk7iFioAmA7IC0kerrUDaZ1S1l0k8QPlp6L4+qXZIdv7HydLymX2RQAEseeFZel15GAkUOP5JTWDuRAaGliDw3wjBntp+8K8IwVtmsMjXyLCCp7YXXCp9AkoRYA85Kn82gmWmUAQtNByrkpcP+R0juNLb0TBQbCB2j5iM+j+eAVem5nXDsEJaJmd3Q8EA4uTyiCzUT9U5mcqde3Tngit7biaBtTqoq9jlVyYz8F7Wwec2h+4ycP+C0E3QuDjze6aAeWJAJmb3UauLi10sm7g8CoJCjS+RvnzaTFPTd6AtJLoO+jgMCiETn3Y3UygSK8WBLwGpb/w7CJ30NF1L6EQKQibxFuWNb+809t20jI25tda61KOvqcQThPfHJQbEmVu8TJ1rXW39B0FVjflf+OAJAAAAAElFTkSuQmCC", style='width:25px;length:26px;padding-top:5px;')
+                    p(id='gofishLikesTotal')
+                button.mt-auto.btn.btn-lg.btn-block.btn-outline-primary(type='button', id='gofishLikes', onClick='addLike(this.id)') Like
+

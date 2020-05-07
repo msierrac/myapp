@@ -1,0 +1,19 @@
+{
+  "gameName": "Go Fish",
+  "about": "Go Fish or Fish is a card game usually played by two to five players,[2] although it can be played with up to 10 players.",
+  "likes": 0,
+  "players": "2-5 players",
+  "skills": "Matching and Pairing, Memory",
+  "age": "4-10",
+  "cards": "52",
+  "playingTime": "5-15 minutes",
+  "randomChance": "Low-Medium",
+  "history": "The Go Fish card game was invented in 1984 by an 8 year old boy from Buffalo, New York but different variations of Gofish had been played even before that in China. ",
+  "rules": {
+    "play": "Five cards are dealt from a standard 52-card deck to each player, or seven cards if there are three or fewer players. The remaining cards are shared between the players, usually spread out in a disorderly pile referred to as the \"ocean\" or \"pool\". \n\nThe player whose turn it is to play asks another player for his or her cards of a particular face value. For example, Alice may ask, \"Bob, do you have any threes?\" Alice must have at least one card of the rank she requested. Bob must hand over all cards of that rank if possible. If he has none, Bob tells Alice to \"go fish\" (or just simply \"fish\"), and Alice draws a card from the pool and places it in her own hand. Then it is the next player's turn – unless the card Alice drew is the card she asked for, in which case she shows it to the other players, and she gets another turn. When any player at any time has two cards of one face value, it forms a pair, and the cards must be placed face up in front of that player.\n\nPlay proceeds to the left. When all sets of cards have been laid down in pairs, the game ends. The player with the most pairs wins.",
+    "penalties": [""],
+    "twoplayer": ""
+  },
+  "strategies": "If, when fishing, a player draws a rank they did not have, they should ask for it on their next turn. Otherwise, they should rotate among the ranks that they already hold. In the more difficult variants, strategy often requires memorizing which cards each player possesses. Unlike many card games, Go Fish depends on the honor system; lying about the contents of one's hand is difficult to prevent.\n\nIt is often beneficial for the player to conceal the cards they hold in order to prevent other players from knowing which cards they can ask for. This can be accomplished by consistently asking different players for the same rank of card.",
+  "similarGames": []
+}

@@ -1,0 +1,19 @@
+{
+  "gameName": "Monopoly Deal",
+  "about": "Monopoly Deal is a card-based variant of Monopoly released by Hasbro in 2008. The objective of the game is not to have the most money, but to collect 3 full Color-groups before anyone else. Various cards have been added, with varying effects on gameplay",
+  "likes": 0,
+  "players": "2-5 players",
+  "skills": "Adding, Strategy",
+  "age": "8+",
+  "cards": "110",
+  "playingTime": "Varies",
+  "randomChance": "High",
+  "history": "",
+  "rules": {
+    "play": "Once at your turn, do the following:\n\n1. Take two cards from the pile (five if you have no cards in your hand).\n\n2. Play up to three cards.\n\nPlaying a card means:\n\nIf it is a money card, put it in the bank in front of you. The contents of the bank should form a single pile of cards.\nIf it is a property card, put it in the collection in front of you. The collection should be arranged row by row, each row represents a set (complete or incomplete). A set may be formed by single-coloured cards, two-coloured cards of the same colour and/or multicoloured cards.\nThe rule doesn't say that you can't make two sets of the same colour, therefore, you may split the cards into different sets to prevent them being stolen by a \"Deal Breaker\" card, even if you have 3 green cards.\n\nIf it is an action card, you may either discard it by putting it in the bank as cash or use it by playing it into the centre (except houses and hotels). A house can be built on a complete set (except stations and utilities). A hotel can be built on a house.\n3. Discard extra cards so that you have at most seven cards left.\n\nYou may rearrange your properties only during your turn. (NOT houses or hotels, once played on a property set then they remain there. However, they can be used to pay debts before the property sets are broken up. Once you form three different-coloured property sets, the game ends.\n\n",
+    "penalties": ["You may pay by any combination of cash, properties (but not the multicoloured cards) or both on your desk in the discretion of the paying player. No change is given. You must not pay from your hand. If there is nothing on your desk, you need not pay. The multicoloured cards are valueless, therefore, it cannot be paid under any circumstances. Therefore, if you have only the multicoloured cards but nothing else, you also need not pay."],
+    "twoplayer": ""
+  },
+  "strategies": "Remember the more bills and bigger bills payment strategy when charging a single player Rent. Always go for the opponent with the bill showing that’s a larger denomination than what you’re charging. If all the opponents only have equal amounts or smaller than what you’re charging showing then go with opponent with the smaller bill (when they appear to have more than one bill). The concept is to try and get either more than your charging Rent for or at least more than one bill in payment. Check out the Monopoly Deal Rules and FAQ website to learn about what can and can't be used to pay rent.\n\n Make sure to survey the table before charging group Rent (maximize your money). When you’re about to charge your opponents Rent make sure they all have money in the Bank and enough money to pay your Rent. It’s not a good idea to play a It's My Birthday action card if only two out of your three opponents have more than 1M in the Bank.",
+  "similarGames": []
+}

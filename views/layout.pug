@@ -1,0 +1,67 @@
+doctype html
+html
+  head
+    // bootstrap script css + js
+    script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous")
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
+
+    // my js + css
+    script(src='javascripts/client.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script.
+      var count = 0;
+      function addLike(id) {
+        // this function handles like button, uses local storage to store and retrieve likes
+        if (typeof(Storage) !== "undefined") {
+          var str_count = localStorage.getItem(id);
+          if (str_count == null || str_count == 'null') {
+            count = 1;
+          } else {
+            count = parseInt(str_count);
+            count++;
+          }
+          localStorage.setItem(id, count);
+          document.getElementById(id + 'Total').innerHTML = count;
+        } else {
+        }
+      }
+
+    header
+      .container-fluid
+
+          nav.navbar.navbar-expand-lg.navbar-fixed-top
+            a.navbar-brand(href='/')
+              .span
+                img(src='/images/brand.png', style='width:95px;length:70px;padding:0;')
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            #navbarNavDropdown.collapse.navbar-collapse
+              ul.navbar-nav
+                li.nav-item.dropdown
+                  #navbarDropdownMenuLink0.a.nav-link.dropdown-toggle(role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Board Games
+                  .dropdown-menu(aria-labelledby='navbarDropdownMenuLink0')
+                    a.dropdown-item(href='/gofish') Go Fish
+                    a.dropdown-item(href='/mdeal') Monopoly Deal
+                    a.dropdown-item(href='/uno') Uno
+                li.nav-item.dropdown
+                  #navbarDropdownMenuLink1.a.nav-link.dropdown-toggle(role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Card Games
+                  .dropdown-menu(aria-labelledby='navbarDropdownMenuLink1')
+                    a.dropdown-item(href='/gofish') Go Fish
+                    a.dropdown-item(href='/mdeal') Monopoly Deal
+                    a.dropdown-item(href='/uno') Uno
+                li.nav-item.dropdown
+                   #navbarDropdownMenuLink2.a.nav-link.dropdown-toggle(role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                     | Dice Games
+                   .dropdown-menu(aria-labelledby='navbarDropdownMenuLink2')
+                     a.dropdown-item(href='/gofish') Go Fish
+                     a.dropdown-item(href='/mdeal') Monopoly Deal
+                     a.dropdown-item(href='/uno') Uno
+
+  body
+    block content
