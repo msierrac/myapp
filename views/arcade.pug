@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    //script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js')
+    //script(type='text/javascript').
+        $(function () {
+            $('#pacman').click(function () {
+                if (!$('#iframe').length) {
+                    $('#iframeHolder').html('<iframe id="iframe" src="https://www.google.com/logos/2010/pacman10-hp.html#bg=black&autoplay" width="500" height="450"></iframe>');
+                }
+            });
+        });
+
+    .div
+        h1 Arcade Games
+            .column
+                .div
+                    h4 Solitaire
+                    iframe(src='https://www.google.com/logos/fnbx/solitaire/standalone.html', style='width:50%;height:500px;')
+
+                //h4 Pac Man
+                //iframe(src='https://www.google.com/logos/2017/vday17/vday17-27919858.html', style='width:50%;height:500px;')

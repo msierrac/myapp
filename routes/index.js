@@ -8,9 +8,24 @@ let landing = require('../controllers/landing');
 /* GET home page. */
 // noinspection JSUnresolvedFunction
 router.get('/', landing.get_landing);
+
+// for the card games
 router.get('/uno', landing.uno);
 router.get('/mdeal', landing.mdeal);
 router.get('/gofish', landing.goFish);
+
+//for the board games
+router.get('/monopoly', landing.monopoly);
+router.get('/sorry', landing.sorry);
+router.get('/candyland', landing.candyland); 
+
+// for the dice games
+router.get('/yahtzee', landing.yahtzee);
+router.get('/dunNdrags', landing.dunNdrags);
+router.get('/backgammon', landing.backgammon); 
+
+router.get('/arcade', landing.arcade); 
+// for the arcade
 
 module.exports = router;
 

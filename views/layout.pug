@@ -10,6 +10,7 @@ html
 
     // my js + css
     script(src='javascripts/client.js')
+    script(src = 'javascripts/arcade.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
 
     script.
@@ -45,9 +46,9 @@ html
                   #navbarDropdownMenuLink0.a.nav-link.dropdown-toggle(role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                     | Board Games
                   .dropdown-menu(aria-labelledby='navbarDropdownMenuLink0')
-                    a.dropdown-item(href='/gofish') Go Fish
-                    a.dropdown-item(href='/mdeal') Monopoly Deal
-                    a.dropdown-item(href='/uno') Uno
+                    a.dropdown-item(href='/candyland') Candy Land
+                    a.dropdown-item(href='/monopoly') Monopoly
+                    a.dropdown-item(href='/sorry') Sorry!
                 li.nav-item.dropdown
                   #navbarDropdownMenuLink1.a.nav-link.dropdown-toggle(role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                     | Card Games
@@ -59,9 +60,11 @@ html
                    #navbarDropdownMenuLink2.a.nav-link.dropdown-toggle(role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                      | Dice Games
                    .dropdown-menu(aria-labelledby='navbarDropdownMenuLink2')
-                     a.dropdown-item(href='/gofish') Go Fish
-                     a.dropdown-item(href='/mdeal') Monopoly Deal
-                     a.dropdown-item(href='/uno') Uno
+                     a.dropdown-item(href='/backgammon') Backgammon
+                     a.dropdown-item(href='/dunNdrags') Dungeons & Dragons
+                     a.dropdown-item(href='/yahtzee') Yahtzee
+                li.nav-item
+                  a.nav-link(href='/arcade') Arcade
 
   body
     block content
