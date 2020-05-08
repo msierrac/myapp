@@ -13,6 +13,7 @@ let backgammonData = require('../public/data/dice/backgammon.json');
 let monopolyData = require('../public/data/board/monopoly'); 
 let sorryData = require('../public/data/board/sorry'); 
 let candylandData = require('../public/data/board/candyland.json');
+let count = 0; 
 
 //let comments = require('../../public/data/comments.json'); 
 
@@ -63,6 +64,10 @@ exports.dunNdrags = function(req, res, next) {
 exports.yahtzee = function(req, res, next) {
     console.log('Clicked on Go Fish button');
     res.render('yahtzee', {data:yatzheeData});
+}
+exports.submit = function (req, res, next) {
+    yatzheeData['likes'] += 1; 
+    res.redirect('/yahtzee');
 }
 /*
 exports.comments = function(req, res, next) {
